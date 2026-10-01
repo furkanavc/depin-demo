@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "../utils/utilities.css";
+
+:root {
+  --1px: min(1px, 0.08064vw);
+
+  @media (max-width: 1023.98px) {
+    --1px: min(1.2px, 0.24vw);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-background font-poppins text-foreground;
+  background-position: center;
+}
